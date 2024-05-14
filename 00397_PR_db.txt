@@ -1,0 +1,163 @@
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\24012401
+Shape Box 100
+Tetrode 2
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+Tetrode 3
+Unit 1
+Unit 2
+Tetrode 4
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\16012401
+Shape Box 100
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+Unit 2
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\27122301
+Shape Box 100
+Tetrode 2
+Unit 1
+Unit 2
+Tetrode 3
+Unit 1
+Unit 2
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\22122301
+Shape Box 100
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\18122301
+Shape Box 100
+Tetrode 4
+Unit 1
+Unit 2
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\07122301
+Shape Box 100
+Tetrode 1
+Unit 1
+Tetrode 2
+Unit 1
+Unit 2
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\05122301
+Shape Box 100
+Tetrode 2
+Unit 1
+Unit 2
+Tetrode 3
+Unit 1
+Tetrode 4
+Unit 1
+Unit 2
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\29112301
+Shape Box 100
+Tetrode 1
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\17112301
+Shape Box 100
+Tetrode 2
+Unit 1
+Unit 2
+Tetrode 3
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\07112301
+Shape Box 100
+Tetrode 1
+Unit 1
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\01112301
+Shape Box 100
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\13102301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\24092301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\20092301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\13092301
+Shape Box 100
+Tetrode 3
+Unit 1
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\07092301
+Shape Box 100
+Tetrode 3
+Unit 1
+Unit 2
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\01092301
+Shape Box 100
+Tetrode 1
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\28082301
+Shape Box 100
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\22082301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\12082301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\06082301
+Shape Box 100
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+Tetrode 4
+Unit 1
+---
+Session E:\GPS\cal\Motivation\Motivation_SR\databaseFiles\00397\02082301
+Shape Box 100
+Tetrode 3
+Unit 1
+Unit 2
+---

@@ -1,0 +1,1016 @@
+Name,Value,,,,,,,,,,,,,,,
+Schedule Name,PR_250823,,,,,,,,,,,,,,,
+Version,N/A,,,,,,,,,,,,,,,
+Environment,Chamber 3 [1],,,,,,,,,,,,,,,
+Machine Name,DESKTOP-73QI2H7,,,,,,,,,,,,,,,
+Date/Time,09/26/2023 09:32:26,,,,,,,,,,,,,,,
+Database,*DEFAULT,,,,,,,,,,,,,,,
+Schedule Run ID,395,,,,,,,,,,,,,,,
+Finalized,No,,,,,,,,,,,,,,,
+Record Count,998,,,,,,,,,,,,,,,
+Animal ID,397,,,,,,,,,,,,,,,
+Application_Version,ABET II Touch 19.11.21.0,,,,,,,,,,,,,,,
+Max_Number_Trials,0,,,,,,,,,,,,,,,
+Max_Schedule_Time,3600,,,,,,,,,,,,,,,
+Notes,26092301,,,,,,,,,,,,,,,
+Schedule_Start_Time,2023-09-26T09:32:27.040,,,,,,,,,,,,,,,
+User,DB,,,,,,,,,,,,,,,
+Evnt_Time,Evnt_ID,Event_Name,Item_Name,Alias_Name,Group_ID,Num_Args,Arg1_Name,Arg1_Value,Arg2_Name,Arg2_Value,Arg3_Name,Arg3_Value,Arg4_Name,Arg4_Value,Arg5_Name,Arg5_Value
+0,28,Input Definition,(SYSTEM),,0,2,Nose_Poke #1,8,Tray #1,9,,0,,0,,0
+0,27,Output Definition,(SYSTEM),,0,5,Feeder #1,17,Pump #1,18,White_Noise #1,20,fans #1,22,Chamber_Light #1,23
+0,27,Output Definition,(SYSTEM),,0,5,Tone #1,24,Tone #2,25,Tone #3,26,NP_Light #1,27,TrayLight #1,28
+0,27,Output Definition,(SYSTEM),,0,1,NP_Light #3,29,,0,,0,,0,,0
+0,16,Variable Event,_Schedule_Timer,,0,1,Value,0,,0,,0,,0,,0
+0,16,Variable Event,_Trial_Counter,,0,1,Value,0,,0,,0,,0,,0
+0,16,Variable Event,_Trial_Timer,,0,1,Value,0,,0,,0,,0,,0
+0,16,Variable Event,PR_count,,0,1,Value,0,,0,,0,,0,,0
+0,16,Variable Event,Rewards_per_step,,0,1,Value,1,,0,,0,,0,,0
+0,16,Variable Event,Step_value,,0,1,Value,3,,0,,0,,0,,0
+0,16,Variable Event,Volume,,0,1,Value,2222,,0,,0,,0,,0
+0,22,List Array - Write,PR_Value,,0,5,Item #1,1,Item #2,2,Item #3,4,Item #4,6,Item #5,8
+0,22,List Array - Write,PR_Value,,0,5,Item #6,11,Item #7,15,Item #8,19,Item #9,25,Item #10,31
+0,22,List Array - Write,PR_Value,,0,5,Item #11,40,Item #12,50,Item #13,62,Item #14,77,Item #15,95
+0,22,List Array - Write,PR_Value,,0,5,Item #16,117,Item #17,144,Item #18,177,Item #19,218,Item #20,267
+0,22,List Array - Write,PR_Value,,0,5,Item #21,328,Item #22,402,Item #23,492,Item #24,602,Item #25,737
+0,22,List Array - Write,PR_Value,,0,2,Item #26,901,Item #27,1102,,0,,0,,0
+0,17,List Change - Set,PR_Value,,0,2,Index,1,Value,1,,0,,0,,0
+0,0,Schedule Startup Event,(SYSTEM),,0,0,,0,,0,,0,,0,,0
+0,29,Timer Event,_Schedule_Timer,,0,1,Value,0,,0,,0,,0,,0
+0.001,21,Group Change Event,Group Change,,0,1,New Group,1,,0,,0,,0,,0
+0.001,1,Condition Event,PR Start,,1,0,,0,,0,,0,,0,,0
+0.001,3,Output On Event,Chamber_Light #1,,1,0,,0,,0,,0,,0,,0
+0.001,7,Pulse Output Event,Pump #1,,1,1,Duration,0.05,,0,,0,,0,,0
+0.001,21,Group Change Event,Group Change,,1,1,New Group,2,,0,,0,,0,,0
+38.713,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+38.713,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+38.713,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+38.713,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+38.713,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+38.713,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+38.713,16,Variable Event,_Trial_Counter,,2,1,Value,1,,0,,0,,0,,0
+38.713,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+38.713,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+38.713,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+38.713,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+38.713,19,List Change - Next Value,PR_Value,,2,2,Index,2,Value,2,,0,,0,,0
+38.713,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+38.713,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+38.938,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+41.378,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+41.634,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+41.709,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+42.038,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+46.545,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+47.159,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+49.78,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+49.78,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+49.78,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+49.78,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+49.855,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+50.154,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+50.154,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+50.154,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+50.154,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+50.154,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+50.154,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+50.154,16,Variable Event,_Trial_Counter,,2,1,Value,2,,0,,0,,0,,0
+50.154,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+50.154,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+50.154,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+50.154,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+50.154,19,List Change - Next Value,PR_Value,,2,2,Index,3,Value,4,,0,,0,,0
+50.154,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+50.154,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+50.259,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+51.397,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+51.398,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+51.398,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+51.398,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+51.667,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+51.757,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+51.757,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+51.757,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+51.757,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+51.861,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+53.525,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+53.869,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+54.048,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+54.168,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+96.314,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+96.314,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+96.314,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+96.314,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+96.674,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+96.794,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+96.794,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+96.794,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+96.794,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+96.794,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+96.794,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+96.794,16,Variable Event,_Trial_Counter,,2,1,Value,3,,0,,0,,0,,0
+96.794,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+96.794,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+96.794,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+96.794,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+96.794,19,List Change - Next Value,PR_Value,,2,2,Index,4,Value,6,,0,,0,,0
+96.794,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+96.794,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+96.929,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+97.004,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+97.004,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+97.004,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+97.004,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+97.123,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+97.363,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+99.342,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+102.696,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+104.149,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+107.624,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+107.624,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+107.624,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+107.624,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+107.668,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+107.743,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+107.743,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+107.743,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+107.743,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+108.058,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+108.358,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+108.358,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+108.358,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+108.358,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+108.462,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+108.672,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+108.672,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+108.672,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+108.672,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+108.762,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+109.152,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+109.152,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+109.152,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+109.152,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+109.152,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+109.152,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+109.152,16,Variable Event,_Trial_Counter,,2,1,Value,4,,0,,0,,0,,0
+109.152,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+109.152,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+109.152,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+109.152,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+109.152,19,List Change - Next Value,PR_Value,,2,2,Index,5,Value,8,,0,,0,,0
+109.152,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+109.152,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+109.571,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+109.886,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+116.4,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+116.445,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+116.595,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+116.67,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+116.894,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+117.118,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+117.298,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+117.328,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+118.706,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+121.134,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+121.134,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+121.134,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+121.134,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+121.223,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+121.403,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+121.403,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+121.403,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+121.403,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+121.523,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.438,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.438,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+123.438,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+123.438,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+123.513,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.588,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.588,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+123.588,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+123.588,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+123.618,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.813,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+123.813,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+123.813,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+123.813,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+124.023,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.083,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.083,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+124.083,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+124.083,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+124.217,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.382,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.382,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+124.382,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+124.382,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+124.427,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.907,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+124.907,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+124.907,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+124.907,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+124.907,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+124.907,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+124.907,16,Variable Event,_Trial_Counter,,2,1,Value,5,,0,,0,,0,,0
+124.907,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+124.907,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+124.907,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+124.907,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+124.907,19,List Change - Next Value,PR_Value,,2,2,Index,6,Value,11,,0,,0,,0
+124.907,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+124.907,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+125.326,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.386,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.386,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+125.386,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+125.386,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+125.431,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.791,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.791,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+125.791,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+125.791,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+125.836,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.956,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+125.956,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+125.956,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+125.956,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+126.03,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+126.33,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+126.33,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+126.33,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+126.33,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+126.434,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+126.675,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+136.874,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+139.346,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+139.346,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+139.346,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+139.346,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+139.391,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+139.69,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+139.691,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+139.691,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+139.691,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+139.78,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+139.825,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+139.825,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+139.825,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+139.825,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+139.885,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+140.305,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+140.305,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+140.305,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+140.305,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+140.591,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+140.89,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+140.89,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+140.89,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+140.89,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+141.398,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+141.877,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+141.877,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+141.877,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+141.877,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+142.102,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+142.117,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+142.117,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+142.117,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+142.117,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+142.117,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+142.117,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+142.117,16,Variable Event,_Trial_Counter,,2,1,Value,6,,0,,0,,0,,0
+142.117,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+142.117,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+142.117,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+142.117,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+142.117,19,List Change - Next Value,PR_Value,,2,2,Index,7,Value,15,,0,,0,,0
+142.117,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+142.117,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+142.192,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+142.207,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+142.207,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+142.207,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+142.207,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+142.506,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+142.745,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+152.637,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+157.699,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+157.699,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+157.699,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+157.699,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+157.759,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.044,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.044,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+158.044,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+158.044,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+158.149,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.404,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.404,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+158.404,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+158.404,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+158.658,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.898,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+158.898,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+158.898,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+158.898,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+158.958,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.152,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.152,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+159.152,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+159.152,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+159.272,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.318,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.318,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+159.318,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+159.318,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+159.363,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.407,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.408,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+159.408,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+159.408,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+159.767,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.796,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+159.797,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+159.797,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+159.797,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+160.066,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+160.081,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+160.081,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+160.081,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+160.081,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+160.575,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+160.755,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+160.755,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+160.755,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+160.755,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+161.473,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+161.728,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+161.728,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+161.728,16,Variable Event,PR_count,,2,1,Value,12,,0,,0,,0,,0
+161.728,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+161.863,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+161.968,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+161.968,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+161.968,16,Variable Event,PR_count,,2,1,Value,13,,0,,0,,0,,0
+161.968,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+162.073,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+162.192,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+162.192,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+162.192,16,Variable Event,PR_count,,2,1,Value,14,,0,,0,,0,,0
+162.192,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+162.267,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+162.417,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+162.417,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+162.417,16,Variable Event,PR_count,,2,1,Value,15,,0,,0,,0,,0
+162.417,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+162.417,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+162.417,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+162.417,16,Variable Event,_Trial_Counter,,2,1,Value,7,,0,,0,,0,,0
+162.417,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+162.417,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+162.417,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+162.417,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+162.417,19,List Change - Next Value,PR_Value,,2,2,Index,8,Value,19,,0,,0,,0
+162.417,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+162.417,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+162.447,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+162.671,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+174.907,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+179.176,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+179.176,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+179.176,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+179.176,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+179.281,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+179.701,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+179.701,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+179.701,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+179.701,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+179.82,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+180.434,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+180.435,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+180.435,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+180.435,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+180.524,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+180.763,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+180.764,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+180.764,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+180.764,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+180.928,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+181.259,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+181.259,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+181.259,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+181.259,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+181.424,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+181.499,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+181.499,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+181.499,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+181.499,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+181.634,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+182.367,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+182.367,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+182.367,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+182.367,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+182.427,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+183.296,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+183.296,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+183.296,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+183.296,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+183.341,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+184.014,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+184.014,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+184.014,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+184.014,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+184.134,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.168,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.168,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+185.168,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+185.168,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+185.243,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.288,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.288,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+185.288,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+185.288,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+185.348,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.393,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.393,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+185.393,16,Variable Event,PR_count,,2,1,Value,12,,0,,0,,0,,0
+185.393,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+185.438,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.633,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.633,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+185.633,16,Variable Event,PR_count,,2,1,Value,13,,0,,0,,0,,0
+185.633,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+185.738,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.917,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+185.917,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+185.917,16,Variable Event,PR_count,,2,1,Value,14,,0,,0,,0,,0
+185.917,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+185.947,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+186.082,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+186.082,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+186.082,16,Variable Event,PR_count,,2,1,Value,15,,0,,0,,0,,0
+186.082,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+186.142,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+187.923,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+187.923,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+187.923,16,Variable Event,PR_count,,2,1,Value,16,,0,,0,,0,,0
+187.923,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+188.043,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+188.297,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+188.297,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+188.297,16,Variable Event,PR_count,,2,1,Value,17,,0,,0,,0,,0
+188.297,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+188.342,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+188.567,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+188.567,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+188.567,16,Variable Event,PR_count,,2,1,Value,18,,0,,0,,0,,0
+188.567,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+188.852,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+189.437,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+189.437,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+189.437,16,Variable Event,PR_count,,2,1,Value,19,,0,,0,,0,,0
+189.437,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+189.437,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+189.437,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+189.437,16,Variable Event,_Trial_Counter,,2,1,Value,8,,0,,0,,0,,0
+189.437,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+189.437,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+189.437,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+189.437,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+189.437,19,List Change - Next Value,PR_Value,,2,2,Index,9,Value,25,,0,,0,,0
+189.437,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+189.437,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+189.662,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+189.677,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+189.677,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+189.677,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+189.677,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+189.752,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+190.037,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+202.801,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+213.404,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+213.404,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+213.404,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+213.404,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+213.434,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+214.182,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+214.182,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+214.182,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+214.182,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+214.737,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+218.408,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+218.408,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+218.408,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+218.408,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+218.648,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+218.738,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+218.738,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+218.738,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+218.738,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+218.842,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+219.966,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+219.966,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+219.966,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+219.966,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+220.146,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.326,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.326,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+220.326,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+220.326,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+220.401,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.461,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.461,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+220.461,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+220.461,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+220.551,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.566,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.566,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+220.566,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+220.566,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+220.85,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.88,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+220.88,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+220.88,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+220.88,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+221.344,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+221.374,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+221.374,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+221.374,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+221.374,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+221.449,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+221.509,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+221.509,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+221.509,16,Variable Event,PR_count,,2,1,Value,12,,0,,0,,0,,0
+221.509,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+221.958,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+222.137,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+222.138,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+222.138,16,Variable Event,PR_count,,2,1,Value,13,,0,,0,,0,,0
+222.138,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+222.152,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+222.617,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+222.617,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+222.617,16,Variable Event,PR_count,,2,1,Value,14,,0,,0,,0,,0
+222.617,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+222.752,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+223.201,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+226.062,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+238.507,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+238.507,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+238.507,16,Variable Event,PR_count,,2,1,Value,15,,0,,0,,0,,0
+238.507,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+238.597,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+244.243,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+244.243,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+244.243,16,Variable Event,PR_count,,2,1,Value,16,,0,,0,,0,,0
+244.243,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+244.812,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+244.857,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+244.857,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+244.857,16,Variable Event,PR_count,,2,1,Value,17,,0,,0,,0,,0
+244.857,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+245.516,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+246.04,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+246.04,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+246.04,16,Variable Event,PR_count,,2,1,Value,18,,0,,0,,0,,0
+246.04,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+246.205,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+246.818,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+246.818,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+246.818,16,Variable Event,PR_count,,2,1,Value,19,,0,,0,,0,,0
+246.818,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+247.312,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+247.627,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+247.627,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+247.627,16,Variable Event,PR_count,,2,1,Value,20,,0,,0,,0,,0
+247.627,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+247.717,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+248.001,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+248.001,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+248.001,16,Variable Event,PR_count,,2,1,Value,21,,0,,0,,0,,0
+248.001,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+248.809,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+248.944,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+248.944,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+248.944,16,Variable Event,PR_count,,2,1,Value,22,,0,,0,,0,,0
+248.944,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+249.424,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+250.007,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+250.007,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+250.007,16,Variable Event,PR_count,,2,1,Value,23,,0,,0,,0,,0
+250.007,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+250.037,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+250.067,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+250.067,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+250.067,16,Variable Event,PR_count,,2,1,Value,24,,0,,0,,0,,0
+250.067,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+250.426,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+251.13,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+251.13,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+251.13,16,Variable Event,PR_count,,2,1,Value,25,,0,,0,,0,,0
+251.13,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+251.13,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+251.13,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+251.13,16,Variable Event,_Trial_Counter,,2,1,Value,9,,0,,0,,0,,0
+251.13,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+251.13,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+251.13,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+251.13,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+251.13,19,List Change - Next Value,PR_Value,,2,2,Index,10,Value,31,,0,,0,,0
+251.13,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+251.13,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+251.235,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+251.773,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+263.237,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+283.099,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+283.099,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+283.099,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+283.099,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+283.129,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+446.62,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+446.62,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+446.62,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+446.62,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+447.248,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+447.818,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+447.819,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+447.819,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+447.819,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+447.848,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+450.708,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+450.708,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+450.708,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+450.708,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+450.783,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+451.068,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+451.068,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+451.068,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+451.068,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+451.278,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+451.818,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+451.818,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+451.818,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+451.818,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+452.088,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.298,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.298,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+452.298,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+452.298,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+452.582,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.701,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.702,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+452.702,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+452.702,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+452.791,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.821,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+452.821,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+452.821,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+452.821,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+453.09,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+454.229,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+454.229,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+454.229,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+454.229,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+454.693,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+454.708,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+454.708,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+454.708,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+454.708,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+455.082,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+455.636,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+455.636,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+455.636,16,Variable Event,PR_count,,2,1,Value,12,,0,,0,,0,,0
+455.636,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+456.49,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+2942.945,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+2942.945,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+2942.945,16,Variable Event,PR_count,,2,1,Value,13,,0,,0,,0,,0
+2942.945,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+2943.215,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3040.166,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3040.167,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3040.167,16,Variable Event,PR_count,,2,1,Value,14,,0,,0,,0,,0
+3040.167,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3041.154,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3046.572,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3046.572,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3046.572,16,Variable Event,PR_count,,2,1,Value,15,,0,,0,,0,,0
+3046.572,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3047.276,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3047.321,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3047.321,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3047.321,16,Variable Event,PR_count,,2,1,Value,16,,0,,0,,0,,0
+3047.321,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3047.769,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3047.77,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3047.77,16,Variable Event,PR_count,,2,1,Value,17,,0,,0,,0,,0
+3047.77,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3048.069,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3048.204,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3048.204,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3048.204,16,Variable Event,PR_count,,2,1,Value,18,,0,,0,,0,,0
+3048.204,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3048.474,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3049.313,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3049.314,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3049.314,16,Variable Event,PR_count,,2,1,Value,19,,0,,0,,0,,0
+3049.314,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3049.479,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3049.674,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3049.674,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3049.674,16,Variable Event,PR_count,,2,1,Value,20,,0,,0,,0,,0
+3049.674,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3049.778,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3057.688,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3057.688,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3057.688,16,Variable Event,PR_count,,2,1,Value,21,,0,,0,,0,,0
+3057.688,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3057.898,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3058.137,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3058.137,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3058.137,16,Variable Event,PR_count,,2,1,Value,22,,0,,0,,0,,0
+3058.137,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3059.202,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3059.472,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3059.472,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3059.472,16,Variable Event,PR_count,,2,1,Value,23,,0,,0,,0,,0
+3059.472,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3059.607,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3059.682,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3059.682,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3059.682,16,Variable Event,PR_count,,2,1,Value,24,,0,,0,,0,,0
+3059.682,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3062.002,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3062.542,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3062.542,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3062.542,16,Variable Event,PR_count,,2,1,Value,25,,0,,0,,0,,0
+3062.542,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3062.706,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3063.306,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3063.307,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3063.307,16,Variable Event,PR_count,,2,1,Value,26,,0,,0,,0,,0
+3063.307,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3063.606,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3063.666,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3063.666,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3063.666,16,Variable Event,PR_count,,2,1,Value,27,,0,,0,,0,,0
+3063.666,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3064.715,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3065.194,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3065.194,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3065.194,16,Variable Event,PR_count,,2,1,Value,28,,0,,0,,0,,0
+3065.194,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3065.313,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3065.538,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3065.538,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3065.538,16,Variable Event,PR_count,,2,1,Value,29,,0,,0,,0,,0
+3065.538,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3065.612,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3067.532,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3067.532,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3067.532,16,Variable Event,PR_count,,2,1,Value,30,,0,,0,,0,,0
+3067.532,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3067.607,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3068.222,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3068.222,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3068.222,16,Variable Event,PR_count,,2,1,Value,31,,0,,0,,0,,0
+3068.222,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3068.222,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+3068.222,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+3068.222,16,Variable Event,_Trial_Counter,,2,1,Value,10,,0,,0,,0,,0
+3068.222,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+3068.222,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+3068.222,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3068.222,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+3068.222,19,List Change - Next Value,PR_Value,,2,2,Index,11,Value,40,,0,,0,,0
+3068.222,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+3068.222,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3068.717,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3068.956,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+3082.538,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+3100.585,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3100.585,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3100.585,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+3100.585,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3100.795,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3101.977,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3101.977,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3101.977,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+3101.977,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3102.292,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3102.382,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3102.382,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3102.382,16,Variable Event,PR_count,,2,1,Value,3,,0,,0,,0,,0
+3102.382,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3102.397,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3103.685,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3103.685,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3103.685,16,Variable Event,PR_count,,2,1,Value,4,,0,,0,,0,,0
+3103.685,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3103.999,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3122.737,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3122.737,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3122.737,16,Variable Event,PR_count,,2,1,Value,5,,0,,0,,0,,0
+3122.737,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3123.456,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3124.685,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3124.685,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3124.685,16,Variable Event,PR_count,,2,1,Value,6,,0,,0,,0,,0
+3124.685,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3125.358,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3125.777,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3125.777,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3125.777,16,Variable Event,PR_count,,2,1,Value,7,,0,,0,,0,,0
+3125.777,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3126.662,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3127.754,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3127.754,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3127.754,16,Variable Event,PR_count,,2,1,Value,8,,0,,0,,0,,0
+3127.754,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3127.963,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3128.412,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3128.412,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3128.412,16,Variable Event,PR_count,,2,1,Value,9,,0,,0,,0,,0
+3128.412,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3128.756,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3129.386,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3129.386,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3129.386,16,Variable Event,PR_count,,2,1,Value,10,,0,,0,,0,,0
+3129.386,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3129.76,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3137.743,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3137.743,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3137.743,16,Variable Event,PR_count,,2,1,Value,11,,0,,0,,0,,0
+3137.743,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3138.207,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3138.596,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3138.596,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3138.596,16,Variable Event,PR_count,,2,1,Value,12,,0,,0,,0,,0
+3138.596,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3139.182,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3142.476,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3142.476,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3142.476,16,Variable Event,PR_count,,2,1,Value,13,,0,,0,,0,,0
+3142.476,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3142.82,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3143.359,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3143.359,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3143.359,16,Variable Event,PR_count,,2,1,Value,14,,0,,0,,0,,0
+3143.359,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3144.002,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3144.032,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3144.032,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3144.032,16,Variable Event,PR_count,,2,1,Value,15,,0,,0,,0,,0
+3144.032,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3144.407,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3147.49,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3147.49,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3147.49,16,Variable Event,PR_count,,2,1,Value,16,,0,,0,,0,,0
+3147.49,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3147.611,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3152.764,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3152.764,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3152.764,16,Variable Event,PR_count,,2,1,Value,17,,0,,0,,0,,0
+3152.764,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3152.913,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3152.988,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3152.988,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3152.988,16,Variable Event,PR_count,,2,1,Value,18,,0,,0,,0,,0
+3152.988,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3153.512,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3153.676,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3153.676,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3153.676,16,Variable Event,PR_count,,2,1,Value,19,,0,,0,,0,,0
+3153.676,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3154.02,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3154.11,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3154.11,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3154.11,16,Variable Event,PR_count,,2,1,Value,20,,0,,0,,0,,0
+3154.11,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3154.319,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3157.076,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3157.076,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3157.076,16,Variable Event,PR_count,,2,1,Value,21,,0,,0,,0,,0
+3157.076,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3157.734,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3158.394,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3158.394,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3158.394,16,Variable Event,PR_count,,2,1,Value,22,,0,,0,,0,,0
+3158.394,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3158.738,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3158.783,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3158.783,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3158.783,16,Variable Event,PR_count,,2,1,Value,23,,0,,0,,0,,0
+3158.783,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3159.232,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3159.337,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3159.337,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3159.337,16,Variable Event,PR_count,,2,1,Value,24,,0,,0,,0,,0
+3159.337,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3159.427,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3159.802,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3159.802,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3159.802,16,Variable Event,PR_count,,2,1,Value,25,,0,,0,,0,,0
+3159.802,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3159.937,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3160.356,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3160.356,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3160.356,16,Variable Event,PR_count,,2,1,Value,26,,0,,0,,0,,0
+3160.356,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3160.806,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3160.882,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3160.882,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3160.882,16,Variable Event,PR_count,,2,1,Value,27,,0,,0,,0,,0
+3160.882,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3161.046,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3161.721,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3161.721,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3161.721,16,Variable Event,PR_count,,2,1,Value,28,,0,,0,,0,,0
+3161.721,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3162.05,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3162.364,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3162.364,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3162.364,16,Variable Event,PR_count,,2,1,Value,29,,0,,0,,0,,0
+3162.364,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3162.394,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3162.753,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3162.753,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3162.753,16,Variable Event,PR_count,,2,1,Value,30,,0,,0,,0,,0
+3162.753,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3162.843,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.082,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.082,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3163.082,16,Variable Event,PR_count,,2,1,Value,31,,0,,0,,0,,0
+3163.082,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3163.247,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.516,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.516,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3163.516,16,Variable Event,PR_count,,2,1,Value,32,,0,,0,,0,,0
+3163.516,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3163.756,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.966,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3163.966,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3163.966,16,Variable Event,PR_count,,2,1,Value,33,,0,,0,,0,,0
+3163.966,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3164.356,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3165.792,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3165.792,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3165.792,16,Variable Event,PR_count,,2,1,Value,34,,0,,0,,0,,0
+3165.792,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3167.243,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3167.993,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3167.993,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3167.993,16,Variable Event,PR_count,,2,1,Value,35,,0,,0,,0,,0
+3167.993,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3168.053,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3169.713,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3169.713,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3169.713,16,Variable Event,PR_count,,2,1,Value,36,,0,,0,,0,,0
+3169.713,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3169.758,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3170.897,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3170.897,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3170.897,16,Variable Event,PR_count,,2,1,Value,37,,0,,0,,0,,0
+3170.897,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3171.257,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3171.422,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3171.422,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3171.422,16,Variable Event,PR_count,,2,1,Value,38,,0,,0,,0,,0
+3171.422,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3173.774,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3173.923,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3173.924,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3173.924,16,Variable Event,PR_count,,2,1,Value,39,,0,,0,,0,,0
+3173.924,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3174.073,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3174.133,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3174.133,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3174.133,16,Variable Event,PR_count,,2,1,Value,40,,0,,0,,0,,0
+3174.133,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3174.133,1,Condition Event,PR Evaluation,,2,0,,0,,0,,0,,0,,0
+3174.133,7,Pulse Output Event,Pump #1,,2,1,Duration,2.222,,0,,0,,0,,0
+3174.133,16,Variable Event,_Trial_Counter,,2,1,Value,11,,0,,0,,0,,0
+3174.133,16,Variable Event,Rewards_per_step,,2,1,Value,0,,0,,0,,0,,0
+3174.133,16,Variable Event,PR_count,,2,1,Value,0,,0,,0,,0,,0
+3174.133,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3174.133,1,Condition Event,PR Rewards per Step,,2,0,,0,,0,,0,,0,,0
+3174.133,19,List Change - Next Value,PR_Value,,2,2,Index,12,Value,50,,0,,0,,0
+3174.133,16,Variable Event,Rewards_per_step,,2,1,Value,1,,0,,0,,0,,0
+3174.133,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3174.268,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3174.717,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3174.717,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3174.717,16,Variable Event,PR_count,,2,1,Value,1,,0,,0,,0,,0
+3174.717,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3174.777,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3175.106,38,Input Transition On Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3175.106,1,Condition Event,PR Count,,2,0,,0,,0,,0,,0,,0
+3175.106,16,Variable Event,PR_count,,2,1,Value,2,,0,,0,,0,,0
+3175.106,61,Group Maintain Event,Group Change,,2,1,New Group,2,,0,,0,,0,,0
+3175.166,39,Input Transition Off Event,Nose_Poke #1,,2,0,,0,,0,,0,,0,,0
+3175.511,38,Input Transition On Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+3187.705,39,Input Transition Off Event,Tray #1,,2,0,,0,,0,,0,,0,,0
+3600,21,Group Change Event,Group Change,,2,1,New Group,3,,0,,0,,0,,0
+3600,16,Variable Event,_Schedule_Timer,,3,1,Value,3600,,0,,0,,0,,0
+3600,16,Variable Event,_Trial_Timer,,3,1,Value,0,,0,,0,,0,,0
+3600,9999,Schedule Shutdown Event,(SYSTEM),,3,0,,0,,0,,0,,0,,0

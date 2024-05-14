@@ -1,0 +1,8 @@
+EgoGEN('00394_PR_db.txt','00394_PR_db.xls')
+EgoGEN('00394_FR_db.txt','00394_FR_db.xls')
+EgoGEN('00397_PR_db.txt','00397_PR_db.xls')
+EgoGEN('00397_FR_db.txt','00397_FR_db.xls')
+EgoGEN('00483_PR_db.txt','00483_PR_db.xls')
+EgoGEN('00483_FR_db.txt','00483_FR_db.xls')
+EgoGEN('00518_PR_db.txt','00518_PR_db.xls')
+EgoGEN('00518_FR_db.txt','00518_FR_db.xls')
