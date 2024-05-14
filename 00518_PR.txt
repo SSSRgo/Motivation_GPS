@@ -1,0 +1,70 @@
+Session H:\Motivation data\00518\01112301
+Shape Box 100
+Tetrode 4
+Unit 1
+---
+Session H:\Motivation data\00518\14122301
+Shape Box 100
+Tetrode 3
+Unit 1
+---
+Session H:\Motivation data\00518\18122301
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session H:\Motivation data\00518\26122301
+Shape Box 100
+Tetrode 2
+Unit 1
+Unit 2
+Tetrode 3
+Unit 1
+---
+Session H:\Motivation data\00518\12012401
+Shape Box 100
+Tetrode 2
+Unit 1
+---
+Session H:\Motivation data\00518\16012401
+Shape Box 100
+Tetrode 1
+Unit 1
+Unit 2
+Tetrode 2
+Unit 1
+Unit 2
+Unit 3
+Tetrode 3
+Unit 1
+---
+Session H:\Motivation data\00518\18012401
+Shape Box 100
+Tetrode 1
+Unit 1
+Tetrode 2
+Unit 1
+---
+Session H:\Motivation data\00518\23012401
+Shape Box 100
+Tetrode 2
+Unit 1
+Tetrode 3
+Unit 1
+---
+Session H:\Motivation data\00518\25012401
+Shape Box 100
+Tetrode 1
+Unit 1
+Unit 2
+Tetrode 2
+Unit 1
+Unit 2
+Tetrode 3
+Unit 1
+Unit 2
+Tetrode 4
+Unit 1
+Unit 2
+Unit 3
+---
