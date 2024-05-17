@@ -44,7 +44,7 @@ fid = fopen('warning.txt', 'a+');
 %% Data Load
 
 ExcelPath='E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\';
-DataPath='E:\GPS\cal\Motivation\Motivation_gps\Data\';
+DataPath='E:\GPS\cal\Motivation\Motivation_gps\Code\Data\';
 
 addpath(ExcelPath)
 addpath(DataPath)

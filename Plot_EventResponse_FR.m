@@ -51,9 +51,9 @@ ExceLhh1 = cellstr(ExceLgg1);
 ExceLnumber1 = length(ExceLhh1);
 ExceLff1 = ExceLhh1;
 
-for ii=1:ExceLnumber1  %%%session number
-    fnumIRT =[ExceLff1{ii}];
-
+for session_number=1:ExceLnumber1  %%%session number
+    fnumIRT =[ExceLff1{session_number}];
+ fnumIRT='00397_08092301.csv';     
     if ~isempty(findstr(fnumIRT,'IRT')), continue, end
 
     try
@@ -66,7 +66,7 @@ for ii=1:ExceLnumber1  %%%session number
     end
 
     %%%%%%%%%%% if it is
-    
+
     if any(contains(fieldnames(timeSeriesData), 'PR_Count'))
         continue
     end
@@ -74,6 +74,7 @@ for ii=1:ExceLnumber1  %%%session number
 
 
     %         ggg = ls('00504_1*mat');
+
     Egoggg = ls([DataPath fnumIRT(1:end-8) '*mat']);
     Egohhh = cellstr(Egoggg);
     Egonumber = length(Egohhh);
@@ -84,6 +85,7 @@ for ii=1:ExceLnumber1  %%%session number
         for kk=1:Egonumber
             close all
             fnumspk =[Egofff{kk}];
+            fnumspk='00397_08092301_T4C1_ego.mat';
 
             load(fnumspk);
 
@@ -104,26 +106,24 @@ for ii=1:ExceLnumber1  %%%session number
             [FiringRate,sedges] = histcounts(cellTS,'BinWidth',BinWidth); % 200s
 
             fr=FiringRate/200;
-
+            num = length(N1);
             numS = length(FiringRate);
             % FiringRate=FiringRate/max(FiringRate);
             FiringRate=(FiringRate-min(FiringRate))/(max(FiringRate)-min(FiringRate));
             ts = 0:BinWidth:BinWidth*(numS-1);
+            t = 0:BinWidth:BinWidth*(num-1);
 
-            num = length(N1);
             if num < numS
                 NoseRate = zeros(numS);
                 NoseRate(1:num) = N1;
                 t = ts;
-            elseif num > numS
+            else
                 FiringRate1=FiringRate;
                 FiringRate = zeros(num,1);
                 FiringRate(1:numS) = FiringRate1;
                 ts = t;
-
-            else
                 NoseRate = N1;
-                t = 0:BinWidth:BinWidth*(num-1);
+
             end
 
             % If the time diff between behavior and electrophysiology
@@ -152,7 +152,7 @@ for ii=1:ExceLnumber1  %%%session number
             %                 NoseRate=NoseRate/max(NoseRate);
             NoseRate=(NoseRate-min(NoseRate))/(max(NoseRate)-min(NoseRate));
 
-            f_corr=figure;
+            f_corr=figure('Visible','off');
             plot(ts,FiringRate,'LineWidth',1.5)
             hold on
             plot(ts,Trayonrate,'LineWidth',1.5)
@@ -178,7 +178,7 @@ for ii=1:ExceLnumber1  %%%session number
             TWindow_trayon=0:binwidth:(RightBound-LeftBound);
             [NWindow_trayon,trayon_starpoint] = EventResonse(timeSeriesData.Tray_1,cellTS,Li_Trayon,Inti_Trayon,binwidth);
 
-            f_peak_trayon=figure;
+            f_peak_trayon=figure('Visible','off');
             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.35])
             plot(linspace(LeftBound,RightBound,length(TWindow_trayon)-1),NWindow_trayon);
             xlabel('Time (s)')
@@ -198,7 +198,7 @@ for ii=1:ExceLnumber1  %%%session number
             TWindow_nosepoke=0:binwidth:(RightBound-LeftBound);
             [NWindow_nosepoke,nosepoke_starpoint] = EventResonse(timeSeriesData.Nose_Poke_1,cellTS,Li_nosepoke,Inti_nosepoke,binwidth);
 
-            f_peak_nosepoke=figure;
+            f_peak_nosepoke=figure('Visible','off');;
             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.35])
             plot(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke);
             xlabel('Time (s)')
@@ -217,7 +217,7 @@ for ii=1:ExceLnumber1  %%%session number
             [NWindow_Trayon_nonpump,] = EventResonse(Event.Trayon_nonpump,cellTS,Li_pumpOrnopump,Inti_pumpOrnopump,binwidth);
 
 
-            f_MeanEventResponse_trayon_pump=figure;
+            f_MeanEventResponse_trayon_pump=figure('Visible','off');;
             %             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.5])
             shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_trayon)-1),NWindow_Trayon_pump',{@mean,@std},'lineprops','-r','transparent',true,'patchSaturation',0.4);
             hold on
@@ -237,20 +237,20 @@ for ii=1:ExceLnumber1  %%%session number
             [NWindow_nosepoke_Rcount_2,nosepoke_starpoint_Rcount_2] = EventResonse(Event.Nosepoke_Rcount_2,cellTS,Li_count_np,Inti_count_np,binwidth);
             [NWindow_nosepoke_Rcount_3,nosepoke_starpoint_Rcount_3] = EventResonse(Event.Nosepoke_Rcount_3,cellTS,Li_count_np,Inti_count_np,binwidth);
 
-            f_MeanEventResponse_Nosepoke_count=figure;
-%             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.5])
-            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_1',{@mean,@std},'lineprops','-r','transparent',true,'patchSaturation',0.4); 
-            hold on 
-            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_2',{@mean,@std},'lineprops','-b','transparent',true,'patchSaturation',0.4); 
-            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_3',{@mean,@std},'lineprops','-g','transparent',true,'patchSaturation',0.4); 
+            f_MeanEventResponse_Nosepoke_count=figure('Visible','off');;
+            %             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.5])
+            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_1',{@mean,@std},'lineprops','-r','transparent',true,'patchSaturation',0.4);
+            hold on
+            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_2',{@mean,@std},'lineprops','-b','transparent',true,'patchSaturation',0.4);
+            shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount_3',{@mean,@std},'lineprops','-g','transparent',true,'patchSaturation',0.4);
 
-%             plot(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke);
+            %             plot(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke);
             xlabel('Time (s)')
             ylabel('Firing Rate (Hz)')
             title([Egoname ' Event Response '], 'Interpreter', 'none')
             legend(['#1';'#2';'#3'],'location','northwest')
 
-          %% FR: Mean Event Response of Nose Poke in different states (states 1-end)
+            %% FR: Mean Event Response of Nose Poke in different states (states 1-end)
 
             LeftBound=Li_state_np; RightBound=Li_state_np+Inti_state_np;
             TWindow_nosepoke=0:binwidth:(RightBound-LeftBound);
@@ -259,12 +259,11 @@ for ii=1:ExceLnumber1  %%%session number
             set(gcf, 'Position', [100, 100, 900, 600]);
             hold on
             ii=1;
-                     win_act_state=[];
+            win_act_state=[];
             %             cmap22=colormap(othercolor('YlOrBr7',length(timeSeriesData.Pump_1)));
             cmap22=parula(ceil(length(timeSeriesData.Pump_1)/state_compress));
+
             for i = 1:length(timeSeriesData.Pump_1)/state_compress
-
-
 
                 if i==length(timeSeriesData.Pump_1)
 
@@ -276,28 +275,19 @@ for ii=1:ExceLnumber1  %%%session number
 
                 else
 
-                    if length(Event.(['Nosepoke_FRstate_',num2str(i)]))<=1
-                        continue
-                    end
-
+                    if length(Event.(['Nosepoke_FRstate_',num2str(i)]))<=1;continue; end
                     %                 [NWindow_nosepoke_Rcount,nosepoke_starpoint_Rcount_1] = EventResonse(Event.(['Nosepoke_FRstate_',num2str(i)]),cellTS,Li_state_np,Inti_state_np,binwidth);
                     [NWindow_nosepoke_Rcount,nosepoke_starpoint_Rcount_1] = EventResonse(Event.(['Nosepoke_FRstate_',num2str(i)]),cellTS,Li_state_np,Inti_state_np,binwidth);
-                    
-                    if isempty(NWindow_nosepoke_Rcount)
+                    if isempty(NWindow_nosepoke_Rcount);continue;end
 
-                        continue
-                    end
-                    
                 end
 
-                                 win_act_state(ii,:)=mean(NWindow_nosepoke_Rcount,2);
+                % heat map data generate
+                win_act_state(ii,:)=mean(NWindow_nosepoke_Rcount,2);
+                % interval np data generate
+                timestamp_np(ii,:)=Event.(['Nosepoke_FRstate_',num2str(i)]);
 
-
-                if nosepoke_starpoint_Rcount_1~=1
-                    
-                    continue
-                end
-
+                if nosepoke_starpoint_Rcount_1~=1;continue;end
 
                 %                 h =shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount',{@mean,@std},'lineprops','-r','transparent',true,'patchSaturation',0.4);
                 p=shadedErrorBar(linspace(LeftBound,RightBound,length(TWindow_nosepoke)-1),NWindow_nosepoke_Rcount',{@mean,@std},'lineprops','-','transparent',true,'patchSaturation',0.1);
@@ -329,46 +319,74 @@ for ii=1:ExceLnumber1  %%%session number
             win_act_state = smoothdata(win_act_state,2);
             f_orderheatmap=figure('Visible','off');
             imagesc(win_act_state);
-            
+
             xlabel('Time (s)')
             ylabel('State')
             colormap("hot")
-%             colormap(othercolor('Reds8'))
-h=colorbar;
-         set(get(h,'Title'),'string','fr');
-% colormap("hot")
-set(gca,'YDIR','reverse');
+            %             colormap(othercolor('Reds8'))
+            h=colorbar;
+            set(get(h,'Title'),'string','fr');
+            % colormap("hot")
+            set(gca,'YDIR','reverse');
 
-% daspect([2,1,1])
-ax = gca; % current axes
-% ax.FontSize = 12;
-% ax.TickDir = 'out';
-% ax.TickLength = [0.02 0.02];
-ax.XTick=[];
-ax.YTick=[1 size(win_act_state,1)];
-title([Egoname ' Event Response '], 'Interpreter', 'none');
+            % daspect([2,1,1])
+            ax = gca; % current axes
+            % ax.FontSize = 12;
+            % ax.TickDir = 'out';
+            % ax.TickLength = [0.02 0.02];
+            ax.XTick=[];
+            ax.YTick=[1 size(win_act_state,1)];
+            title([Egoname ' Event Response '], 'Interpreter', 'none');
+
+            %%
+           a=1;
+           interval_np=circshift(timestamp_np,-1,2)-timestamp_np;
+           interval_np=interval_np(:,1:FR_Fixed_Count-1);
+
+           interval_np=circshift(timestamp_np,-1,2)-timestamp_np;
+
+
+
+           outliers = abs(interval_np - mean(interval_np)) > 3 * std(interval_np);
+% interval_np(outliers) = nan;
+% interval_np = interval_np(~outliers);
+
+f_behavior=figure;
+subplot(2,2,1)
+          ecdf(interval_np(~outliers))
+           subplot(2,2,2)
+           interval_np_mean=mean(interval_np,2);
+           plot(interval_np_mean)
+
+
+
+
+
+            %%
+            aa=timeSeriesData.Nose_Poke_1;
+            timeSeriesData.Nose_Poke_1
 
 
             %% Save figure
 
-    
-              file_path=[figure_save_path,Egoname(1:5),'\'];
-                      if ~exist(file_path, 'dir')
-    mkdir(file_path);
+
+            file_path=[figure_save_path,Egoname(1:5),'\'];
+            if ~exist(file_path, 'dir')
+                mkdir(file_path);
 
 
-end
+            end
 
-
-%             exportgraphics(f_corr,[Egoname '_1' 'Trayon_pump&Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
+% 
+%             exportgraphics(f_corr,[Egoname '_1' '_Trayon_pump&Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
 %             exportgraphics(f_peak_trayon,[Egoname '_2' '_Trayon_pump' '.jpg'],'Resolution',300)
 %             exportgraphics(f_peak_nosepoke,[Egoname '_3' '_Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
-%             %              exportgraphics(f_peak_nosepoke_count,[Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
-%             %              exportgraphics(f_peak_trayon,[Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
-%             %              exportgraphics(f_MeanEventResponse_trayon_pump,[Egoname '_5' '_MeanEventResponse_trayon_pump' '.jpg'],'Resolution',300)
+%             %             %              exportgraphics(f_peak_nosepoke_count,[Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
+%             %             %              exportgraphics(f_peak_trayon,[Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
+%             %             %              exportgraphics(f_MeanEventResponse_trayon_pump,[Egoname '_5' '_MeanEventResponse_trayon_pump' '.jpg'],'Resolution',300)
 %             exportgraphics(f_MeanEventResponse_Nosepoke_count,[Egoname '_5_FR' '_MeanEventResponse_nosepoke_count' '.jpg'],'Resolution',300)
-%    exportgraphics(f_MeanEventResponse_Nosepoke,[file_path,Egoname '_5_FR' '_MeanEventResponse_nosepoke_state' '.jpg'],'Resolution',300)
-            exportgraphics(f_orderheatmap,[file_path,Egoname '_6_FR' '_MeanEventResponse_heat_nosepoke_state' '.jpg'],'Resolution',300)
+%             exportgraphics(f_MeanEventResponse_Nosepoke,[file_path,Egoname '_5_FR' '_MeanEventResponse_nosepoke_state' '.jpg'],'Resolution',300)
+%             exportgraphics(f_orderheatmap,[file_path,Egoname '_6_FR' '_MeanEventResponse_heat_nosepoke_state' '.jpg'],'Resolution',300)
 
             close all
         end

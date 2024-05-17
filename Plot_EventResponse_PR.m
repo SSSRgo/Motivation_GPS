@@ -46,7 +46,7 @@ ExceLhh1 = cellstr(ExceLgg1);
 ExceLnumber1 = length(ExceLhh1);
 ExceLff1 = ExceLhh1;
 
-for session_number=663:ExceLnumber1  %%%session number
+for session_number=1:ExceLnumber1  %%%session number
     fnumIRT =[ExceLff1{session_number}];
 
     if ~isempty(findstr(fnumIRT,'IRT')), continue, end
@@ -266,6 +266,9 @@ for session_number=663:ExceLnumber1  %%%session number
 
                  win_act_state(ii,:)=mean(NWindow_nosepoke_Rcount,2);
 
+                timestamp_np(ii,:)=Event.(['Nosepoke_PRstate_',num2str(i)]);
+
+
                 if nosepoke_starpoint_Rcount_1~=1
                     
                     continue
@@ -325,7 +328,10 @@ title([Egoname ' Event Response '], 'Interpreter', 'none');
 
 %            colormap(othercolor('Oranges7'))
             
+           interval_np=circshift(timestamp_np,-1,2)-timestamp_np;
+           interval_np=interval_np(:,1:FR_Fixed_Count-1);
 
+           interval_np=circshift(timestamp_np,-1,2)-timestamp_np;
 
 
             %% Plot Peak Gain
@@ -360,13 +366,19 @@ title([Egoname ' Event Response '], 'Interpreter', 'none');
             %             set(gcf,'Units','normalized','position',[0.2,0.2,0.6,0.35])
             %% Save figure
             file_path=[figure_save_path,Egoname(1:5),'\'];
-%             exportgraphics(f_corr,[file_path,Egoname '_1' 'Trayon_pump&Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
-%             exportgraphics(f_peak_trayon,[file_path,Egoname '_2' '_Trayon_pump' '.jpg'],'Resolution',300)
-%             exportgraphics(f_peak_nosepoke,[file_path,Egoname '_3' '_Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
+                    
+                      if ~exist(file_path, 'dir')
+    mkdir(file_path);
+
+
+end
+            exportgraphics(f_corr,[file_path,Egoname '_1' 'Trayon_pump&Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
+            exportgraphics(f_peak_trayon,[file_path,Egoname '_2' '_Trayon_pump' '.jpg'],'Resolution',300)
+            exportgraphics(f_peak_nosepoke,[file_path,Egoname '_3' '_Nosepoke_Rcount_1' '.jpg'],'Resolution',300)
             %              exportgraphics(f_peak_nosepoke_count,[file_path,Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
             %              exportgraphics(f_peak_trayon,[file_path,Egoname '_5' '_peak_nosepoke_count' '.jpg'],'Resolution',300)
-            %              exportgraphics(f_MeanEventResponse_trayon_pump,[file_path,Egoname '_5' '_MeanEventResponse_trayon_pump' '.jpg'],'Resolution',300)
-%             exportgraphics(f_MeanEventResponse_Nosepoke,[file_path,Egoname '_5_PR' '_MeanEventResponse_nosepoke_state' '.jpg'],'Resolution',300)
+%                          exportgraphics(f_MeanEventResponse_trayon_pump,[file_path,Egoname '_5' '_MeanEventResponse_trayon_pump' '.jpg'],'Resolution',300)
+            exportgraphics(f_MeanEventResponse_Nosepoke,[file_path,Egoname '_5_PR' '_MeanEventResponse_nosepoke_state' '.jpg'],'Resolution',300)
             exportgraphics(f_orderheatmap,[file_path,Egoname '_6_PR' '_MeanEventResponse_heat_nosepoke_state' '.jpg'],'Resolution',300)
 
             %             exportgraphics(f_peak_gain,[Egoname '_4' '.jpg'],'Resolution',300)

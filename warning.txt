@@ -23407,3 +23407,77 @@ Warning: 00518_25122301_T3C1_ego.mat Unrecognized field name "Nosepoke_FRstate_1
 Warning: 00518_25122301_T3C1_ego.mat Unrecognized field name "Nosepoke_FRstate_118".
 Warning: 00518_25122301_T3C1_ego.mat Unrecognized field name "Nosepoke_FRstate_119".
 Warning: 00518_25122301_T3C1_ego.mat Unrecognized field name "Nosepoke_FRstate_120".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_01122301.csv Unrecognized field name "Tray_1".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_02112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_05092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_11082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_13082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_17102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_24112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00394_28072301.csv Unrecognized function or variable 'state_compress'.
+Warning: 00394_29072301_T1C1_ego.mat Unrecognized field name "Nosepoke_PRstate_9".
+Warning: 00394_29072301_T1C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_01082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_02092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_02112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_02112302.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_03082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_04122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_05082301.csv Unrecognized function or variable 'state_compress'.
+Warning: 00397_06082301_T2C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_06082301_T3C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_06082301_T4C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_06112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_06122301.csv Unrecognized function or variable 'state_compress'.
+Warning: 00397_07112301_T1C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_07112301_T2C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_07112301_T3C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_08092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_12012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_12102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_13082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_14092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_15122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_19092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_20112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_21122301.csv Unrecognized function or variable 'state_compress'.
+Warning: 00397_22122301_T2C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_22122301_T3C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: 00397_22122301_T4C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_23012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_23082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_25092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_27082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_28072301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_28122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_30072301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00397_30112301.csv Unrecognized function or variable 'state_compress'.
+Warning: 00397_31072301_T2C1_ego.mat Unrecognized field name "Nosepoke_PRstate_10".
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_02112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_04122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_08102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_10102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_11012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_12112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_14112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_17102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_19102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_20102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_23102301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_24112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_25012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_26092301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_26122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_28122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00483_30112301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00503_11082301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00504_19082301.csv Unable to perform assignment because the left and right sides have a different number of elements.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_11012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_15012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_15122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_19012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_19122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_22012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_24012401.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_25122301.csv Unrecognized function or variable 'state_compress'.
+Warning: cannot read E:\GPS\cal\Motivation\Motivation_gps\Code\ABET\00518_31102301.csv Unrecognized function or variable 'state_compress'.
